@@ -1,0 +1,97 @@
+/* Reset default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+      font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    overflow: hidden; 
+}
+
+main{
+height: 100vh;
+}
+
+video{
+    position:fixed;
+top:50%;
+left:50%;
+    min-width: 100%;
+    min-height: 100%;
+        width: auto;
+    height: auto;
+       transform: translate(-50%, -50%);
+       background-size: cover;
+         filter: brightness(30%);
+}
+.content{
+    height:100%;
+    position:relative;
+    z-index:1;
+    color:white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.content .est{
+letter-spacing: 0.6em;
+}
+
+.content h1{
+    font-weight:300;
+    font-size: 3.5em;;
+}
+.content p{
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+}
+.nav{
+    position:absolute;
+    z-index:1;
+    color:white;
+display: grid;
+grid-template-columns: 1fr 1fr;
+width:40%;
+margin:50px;
+padding:10px;
+text-align: center;
+justify-content: center;
+align-items: center;
+background-color: #2b292c;
+border-radius:4px;
+
+}
+.content .btn{
+ width: auto; /* Ensure the button only takes up necessary space */
+    justify-self: center; /* Align the button to the left (can also use center or end) */
+    padding: 10px 20px;
+    background-color: #2b292c;
+    outline: none;
+    border:none;
+    color:white;
+    border-radius:4px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+h1{
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    pointer-events: none; /* So images don't interfere with mouse events */
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Fade out effect over 1 second */
+}
+.fade-out {
+    opacity: 0;
+}
